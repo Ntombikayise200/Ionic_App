@@ -1,0 +1,38 @@
+
+
+<ion-content >
+  <div class="container">
+    
+<ion-card class="card">
+  
+ <h1>USER LOGIN</h1>
+<ion-list>
+  <ion-item>
+    <ion-label color="primary" position="floating">Full Name</ion-label>
+    <ion-input autocorrect="on" autofocus="on" clearInput="true" clearOnEdit="true" color="primary" type="text"
+      placeholder="Enter your name" required="true" #username></ion-input>
+    <ion-icon name="person" color="primary" slot="end"></ion-icon>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-label color="primary" position="floating">Password</ion-label>
+    <ion-input autocorrect="on" autofocus="on" clearInput="true" clearOnEdit="true" color="primary" type="password"
+      placeholder="Enter your password" required="true" #password></ion-input>
+    <ion-icon name="eye" color="primary" slot="end"></ion-icon>
+  </ion-item>
+</ion-list>
+
+<ion-row>
+  <ion-col>
+    <ion-button  color="primary"   style="padding-left: 9px; width: 100%; margin-bottom: 0.3rem" (click)="onSubmit(username.value,
+    password.value)">Sign In</ion-button>
+
+  </ion-col>
+</ion-row>
+  <ion-card-content>
+  </ion-card-content>
+</ion-card>
+  </div>
+</ion-content>
